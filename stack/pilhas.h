@@ -13,11 +13,10 @@ typedef struct
 /* funcoes para manipular pilhas */
 
 void inicializaPilha(Pilha *P, int N);
-void realocaPilha(Pilha *P, int N);
 void empilha(Pilha *P, int valor);
 int desempilha(Pilha *P);
 int mostraTopo(Pilha *P);
 void mostraPilha(Pilha *P);
 void desalocaPilha(Pilha *P);
 
-#endif
+#endif /* pilhas.h */
