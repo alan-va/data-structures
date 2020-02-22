@@ -12,11 +12,22 @@ typedef struct
 
 /* funcoes para manipular pilhas */
 
-void inicializaPilha(Pilha *P, int N);
-void empilha(Pilha *P, int valor);
-int desempilha(Pilha *P);
-int mostraTopo(Pilha *P);
-void mostraPilha(Pilha *P);
-void desalocaPilha(Pilha *P);
+/* Inicializa a pilha P com N posicoes. */
+extern void inicializaPilha(Pilha *P, int N);
+
+/* Empilha 'valor' na pilha P. */
+extern void empilha(Pilha *P, int valor);
+
+/* Desempilha e retorna o valor no topo da pilha P. */
+extern int desempilha(Pilha *P);
+
+/* Retorna o valor no topo da pilha P. */
+extern int mostraTopo(Pilha *P);
+
+/* Mostra toda a pilha P, indicando o topo. */
+extern void mostraPilha(Pilha *P);
+
+/* Desaloca uma pilha P. */
+extern void desalocaPilha(Pilha *P);
 
 #endif /* pilhas.h */
