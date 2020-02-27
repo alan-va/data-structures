@@ -1,7 +1,7 @@
 /* Programa apenas para testar o TAD 'fila com prioridades'. */
 
 #include <stdio.h>
-#include "modfp.h" /* <----- */
+#include "modfp.h"
 
 /* Array de dois ponteiros de funcao do tipo funcaoModo. */
 const funcaoModo modos[2] = {crescente, decrescente};
@@ -14,7 +14,7 @@ int main(void)
   char modoFila;
   
   /*Alternativa:
-  Fp *FprioPtr; FprioPtr = criaFilaPtr();
+  Fp *Fprio; Fprio = criaFilaPtr();
   Sendo um ponteiro, sera passado como argumento
   como Fprio, sem o operador &.*/
 

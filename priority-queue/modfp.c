@@ -17,8 +17,8 @@
 #endif
 
 /* Funcoes de comparacao (publicas). */
-bool crescente(int x, int y) { return (x > y) ? true : false; }
-bool decrescente(int x, int y) { return (x < y) ? true : false; }
+bool crescente(const int x, const int y) { return (x > y) ? true : false; }
+bool decrescente(const int x, const int y) { return (x < y) ? true : false; }
 
 /* Funcoes de criacao de uma fila (publicas). */
 Fp criaFila(void) { return (Fp){NULL, NULL, INDEF, INDEF}; }
@@ -248,7 +248,7 @@ int insereNaFila(Fp * const Fila, const int idNodo, const int pri,
   return EXIT_FAILURE;
 } /* fim - insereNaFila */
 
-NodoFp removeDaFila(Fp *Fila, const bool (*_modo)(const int, const int))
+NodoFp removeDaFila(Fp * const Fila, const bool (*_modo)(const int, const int))
 {
   NodoFp Frente = {INDEF, INDEF};
   
