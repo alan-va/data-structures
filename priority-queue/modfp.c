@@ -1,7 +1,7 @@
-/* Implementacoes das funcoes de modfp.h. As
-   descricoes das funcoes estao no cabecalho.
-
-   Ultima modificacao -> (Fevereiro/2020). */
+/* 
+  Implementacoes das funcoes de modfp.h. As
+  descricoes das funcoes estao no cabecalho. 
+*/
 
 #include <stdlib.h> /* NULL, calloc(), realloc() */
 #include <error.h> /* error() */
@@ -35,7 +35,7 @@ static int esq(int i) { return (2*i + 1); }
 /* Aumenta ou diminui o tamanho de uma fila ja alocada em __qtdNodos. */
 static int realocaFila(Fp *Fila, const int __qtdNodos)
 {
-  size_t nT = (size_t)(Fila->qtdMax + __qtdNodos); /* Novo tamamho. */
+  size_t nT = (size_t)(Fila->qtdMax + __qtdNodos); /* Novo tamanho. */
   int *indNodoMod = NULL; /* Pointeiros auxiliares apontanto */
   NodoFp *nodoMod = NULL; /* para nulo inicialmente. */
 
